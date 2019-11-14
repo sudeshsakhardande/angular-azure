@@ -26,10 +26,18 @@
 
   <ItemGroup>
     <None Remove="ClientApp\src\app\fetch-data\fetchdata.componenet.spec.ts" />
+    <None Remove="ClientApp\src\app\guards\auth.guard-old.ts" />
+    <None Remove="ClientApp\src\app\guards\auth.guard.ts" />
+    <None Remove="ClientApp\src\app\services\auth.service-old.ts" />
+    <None Remove="ClientApp\src\app\services\auth.service.ts" />
   </ItemGroup>
 
   <ItemGroup>
     <TypeScriptCompile Include="ClientApp\src\app\fetch-data\fetchdata.componenet.spec.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\guards\auth.guard-old.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\guards\auth.guard.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\services\auth.service-old.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\services\auth.service.ts" />
   </ItemGroup>
 
   <Target Name="DebugEnsureNodeEnv" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('$(SpaRoot)node_modules') ">
